@@ -8,7 +8,13 @@
         http://www.springframework.org/schema/context/spring-context.xsd">
 
     <bean id="musicBeen"
-          class="ru.gorshkov.springcourse.PopMusic">
+          class="ru.gorshkov.springcourse.ClassicaMusic">
+    </bean>
+
+
+    <bean id="musicPlayer"
+          class="ru.gorshkov.springcourse.MusicPlayer">
+        <constructor-arg ref="musicBeen"/>
     </bean>
 
 </beans>
